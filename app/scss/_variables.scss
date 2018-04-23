@@ -1,0 +1,51 @@
+// Typography
+$base-font-family: 'Courier New', Courier,  monospace;
+$base-font-size: 18px;
+$base-font-weight: 400;
+$base-line-height: 1.5em;
+
+$header-font-family: Montserrat, sans-serif;
+
+$textsize: (
+  'small': (
+    font-size: .8em,
+    line-height: 1.875,
+    margin-bottom: 1.875em
+  ),
+  'base': (
+    font-size: 1em,
+    line-height: 1.5,
+    margin-bottom: 1.5em
+  ),
+  'large': (
+    font-size: 2em,
+    line-height: 1.5,
+    margin-bottom: .75em
+  ),
+  'x-large': (
+    font-size: 3em,
+    line-height: 1.5,
+    margin-bottom: .5em
+  ),
+  'xx-large': (
+    font-size: 4em,
+    line-height: 1.125,
+    margin-bottom: .25em
+  )
+);
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$dark-blue: #12141C;
+$base-blue: #373c54;
+$light-blue: #50577a;
+$x-light-blue: #5a638a;
+$xx-light-blue: #656f9c;
+$xxx-light-blue: #b2b7ce;
+
+$base-orange: #f30;
+$dark-orange: #b62400;
+
+$base-shadow: 0 2px 10px 0 rgba(0, 0, 0, .16);

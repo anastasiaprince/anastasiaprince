@@ -1,0 +1,15 @@
+.images {
+  margin: 0 0 1.5em 0;
+}
+.image {
+  border: 1px solid $xxx-light-blue;
+  max-height: 7.5em;
+  max-width: 15em;
+
+  &:hover {
+    border: 1px solid $base-orange;
+  }
+}
+.section-content {
+  padding-left: 1em;
+}

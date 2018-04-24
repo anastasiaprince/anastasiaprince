@@ -1,12 +1,46 @@
 .container {
-  border: 1px solid $dark-blue;
-  margin: $base-line-height;
-  max-width: 100%;
+  background-color: $white;
+  margin-left: $base-line-height;
+  margin-right: 2 * $base-line-height;
+  margin-top: 2 * $base-line-height;
+  max-width: 30 * $base-font-size;
   padding: $base-line-height;
+  position: absolute;
+  z-index: 2;
+}
+
+.line {
+  border: 1px solid $dark-blue;
+  bottom: $base-font-size;
+  left: $base-font-size;
+  position: fixed;
+  right: 2 * $base-font-size;
+  top: $base-font-size;
+  z-index: 3;
+}
+
+.line2 {
+  border: 4px solid $black;
+  bottom: 2 * $base-font-size;
+  left: 2 * $base-font-size;
+  position: fixed;
+  right: $base-font-size;
+  top: 0;
+  z-index: 4;
+}
+
+.line3 {
+  border-right: 10 * $base-font-size solid $base-orange;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 body {
-  border: 4px solid $black;
+  overflow-x: hidden;
 }
 
 // Clearfix (IE6+)

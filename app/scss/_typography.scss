@@ -1,32 +1,39 @@
 body {
   background-color: $white;
-  color: $dark-blue;
+  color: $black;
   font: #{$base-font-size} / #{$base-line-height} $base-font-family;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: $header-font-family;
-  font-weight: 400;
 }
 
 h1 {
   @include print-styles($textsize, large);
+  font-family: $header-font-family;
+  font-weight: 400;
+  letter-spacing: .1em;
   text-transform: uppercase;
 }
 
 h2 {
   @include print-styles($textsize, base);
-  color: $light-blue;
-  margin: 3em 0 0;
-  text-transform: uppercase;
+  color: $base-blue;
+  font-weight: 700;
+  letter-spacing: .15em;
+  margin: 0;
 }
 
 h3 {
   @include print-styles($textsize, base);
-  margin: 1em 0 0;
+  background-color: $black;
+  color: $white;
+  letter-spacing: .1em;
+  margin: 3em 0 1.5em;
+  padding-left: .5em;
+  text-transform: uppercase;
+
+  &:before {
+    color: $xxx-light-blue;
+    content: '>> ';
+    font-weight: 400;
+  }
 }
 
 h4 {
@@ -39,7 +46,8 @@ a {
   border-style: solid;
   border-width: 0 0 1px;
   color: $base-orange;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: .15em;
   text-decoration: none;
 
   &:hover {
@@ -76,6 +84,7 @@ small,
 
 strong {
   font-weight: 700;
+  letter-spacing: .15em;
 }
 
 ol,

@@ -1,44 +1,38 @@
 body {
-  background-color: $white;
-  color: $black;
+  background-color: $peach;
+  color: $base-blue;
   font: #{$base-font-size} / #{$base-line-height} $base-font-family;
 }
 
-h1 {
-  @include print-styles($textsize, large);
+h1,
+h2,
+h3,
+h4 {
+  color: $base-blue;
   font-family: $header-font-family;
+  letter-spacing: .05em;
+}
+
+h1 {
+  @include print-styles($textsize, xx-large);
   font-weight: 400;
-  letter-spacing: .1em;
-  text-transform: uppercase;
 }
 
 h2 {
-  @include print-styles($textsize, base);
-  color: $base-blue;
-  font-weight: 700;
-  letter-spacing: .15em;
-  margin: 0;
+  @include print-styles($textsize, large);
+  border-bottom: 2px solid $dark-blue;
+  letter-spacing: .1em;
+  margin-top: $base-font-size * 3;
 }
 
 h3 {
-  @include print-styles($textsize, base);
-  background-color: $black;
-  color: $white;
-  letter-spacing: .1em;
-  margin: 3em 0 1.5em;
-  padding-left: .5em;
+  @include print-styles($textsize, x-large);
+  padding-top: $base-font-size;
   text-transform: uppercase;
-
-  &:before {
-    color: $xxx-light-blue;
-    content: '>> ';
-    font-weight: 400;
-  }
 }
 
 h4 {
-  @include print-styles($textsize, small);
-  text-transform: uppercase;
+  @include print-styles($textsize, large);
 }
 
 a {
@@ -46,8 +40,6 @@ a {
   border-style: solid;
   border-width: 0 0 1px;
   color: $base-orange;
-  font-weight: 700;
-  letter-spacing: .15em;
   text-decoration: none;
 
   &:hover {
@@ -84,19 +76,35 @@ small,
 
 strong {
   font-weight: 700;
-  letter-spacing: .15em;
+  letter-spacing: .1em;
 }
 
 ol,
 ul {
-  margin-bottom: 1.5em;
-  padding-left: 1em;
+  margin-bottom: $base-font-size * 1.5;
+  padding-left: $base-font-size;
 }
 
 ol {
   list-style-type: decimal;
 }
 
-ul {
-  list-style-type: disc;
+.skills-list {
+  @include print-styles($textsize, small);
+  list-style-type: none;
+  margin-bottom: $base-font-size * .75;
+  padding: 0;
+}
+
+.skills-list__item {
+  background-color: $base-blue;
+  border-radius: $base-font-size;
+  color: $white;
+  display: inline-block;
+  margin: 0 $base-font-size * .25 $base-font-size * .5 0;
+  padding: 0 $base-font-size * .5;
+}
+
+.highlight {
+  color: $base-orange;
 }

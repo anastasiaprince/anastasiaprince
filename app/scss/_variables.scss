@@ -1,10 +1,10 @@
 // Typography
-$base-font-family: 'Courier New', Courier,  monospace;
-$base-font-size: 18px;
+$base-font-family: 'Montserrat', sans-serif;
+$base-font-size: 16px;
 $base-font-weight: 400;
 $base-line-height: 1.5em;
 
-$header-font-family: Montserrat, sans-serif;
+$header-font-family: Inconsolata, sans-serif;
 
 $textsize: (
   'small': (
@@ -18,19 +18,19 @@ $textsize: (
     margin-bottom: 1.5em
   ),
   'large': (
-    font-size: 2em,
+    font-size: 1.25em,
     line-height: 1.5,
     margin-bottom: .75em
   ),
   'x-large': (
+    font-size: 1.5em,
+    line-height: 1.5,
+    margin-bottom: .75em
+  ),
+  'xx-large': (
     font-size: 3em,
     line-height: 1.5,
     margin-bottom: .5em
-  ),
-  'xx-large': (
-    font-size: 4em,
-    line-height: 1.125,
-    margin-bottom: .25em
   )
 );
 
@@ -38,13 +38,10 @@ $textsize: (
 $white: #fff;
 $black: #000;
 
-$dark-blue: #12141c;
 $base-blue: #373c54;
-$light-blue: #50577a;
-$x-light-blue: #5a638a;
-$xx-light-blue: #656f9c;
-$xxx-light-blue: #b2b7ce;
+$dark-blue: #12141c;
 
+$peach: #fff6f4;
 $base-orange: #f30;
 $dark-orange: #b62400;
 

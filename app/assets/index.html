@@ -30,8 +30,7 @@
   <meta name="twitter:description" content="Anastasia Prince is a Senior UX Designer in Dublin, Ireland.">
   <!--<meta name="twitter:image" content="images/764x399.png">-->
   <meta name="theme-color" content="#ff3300">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,700" rel="stylesheet">  <link rel="stylesheet" href="css/app.css" />
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -41,98 +40,206 @@
 </head>
 
 <body>
-  <div class="line"></div>
-  <div class="line2"></div>
-  <div class="line3"></div>
   <div class="container">
     <header>
       <h1>Anastasia Prince</h1>
-      <h2>User Experience Designer in Dublin</h2>
-      <h3>Links</h3>
-      <div class="section-content">
-        <p><a href="https://github.com/anastasiaprince">GitHub</a> / <a href="http://linkedin.com/in/anastasiaprince">LinkedIn</a></p>
-      </div>
+      <p><strong>User Experience Designer // Dublin</strong></p>
     </header>
     <main>
       <section>
-        <h3>Active Projects</h3>
-        <div class="section-content">
+        <p>I’m a full stack UX designer. Practically, that means that I can bring a project from research and analysis to design, user testing and execution.</p>
+        <p>At a high level: I can develop a strategy that aligns business goals with customer needs and then work to deliver that strategy.</p>
+        <p>If you think you might be interested in working with me, you can reach me by email at <a href="mailto:msanaprince@gmail.com">msanaprince@gmail.com</a> or find me on <a href="http://linkedin.com/in/anastasiaprince">LinkedIn</a>.</p>
+      </section>
+      <section>
+        <h2 class="section__header">Active Projects</h2>
+        <div class="section__content">
 
-          <p><a href="/karenodowd" target="_blank"><strong>Karen O'Dowd Portfolio</strong></a> <small>(2018)</small><br>
-          Visual artist's portfolio built with CSS Grid</p>
+          <div class="project">
+            <h3><a href="/karenodowd" target="_blank">Karen O'Dowd Portfolio</a> (2018)</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">Collaborative Prototyping</li>
+              <li class="skills-list__item">Mood Board</li>
+              <li class="skills-list__item">Visual Design</li>
+              <li class="skills-list__item">HTML, CSS & JavaScript</li>
+              <li class="skills-list__item">Deployment</li>
+            </ul>
+            <p>I designed and built a portfolio site for Karen O'Dowd, a visual artist and NCAD graduate living in Dublin.</p>
+          </div>
+          <!--
+            <div class="project-details">
+              <p>The brief was simple: showcase Karen's best work and allow visitors to contact her for purchasing information. The only major challenge was time. Karen was hoping to have the site up and running before an exhibition in two weeks' time.</p>
+              <p>We planned the design collaboratively using paper prototypes and a mood board.</p>
+              <p>I developed a clean, minimalist design that kept the focus on the art. Karen's explores the personal connections we have with landscapes through her work. Much of her work involves the painting of overlapping layers, dissolving and fading between the familiar and unfamiliar.</p>
+              <p>I used CSS Grid and opacity changes to allow the images and their descriptions to float into view, displaying essential information while tying in to the intangible feeling of the works themselves.</p>
+              <p>To develop the site, I used Brunch and Netlify to get it into production as quickly as possible.</p>
+              <p>Since the site was image heavy, I focused most of my development efforts on image optimization and performance. I exported the images at different resolutions from Sketch, served up the appropriate size for each user and lazy loaded the images to improve perceived performance.</p>
+              <p>It was a delight to work on Karen's portfolio &emdash; her art very much speaks for itself &emdash; and also with technology that I hadn't used before (Brunch, Netlify).</p>
+              <p>Future work may include adding a CMS or shopping cart software so that she can sell directly from her site.</p>
+            </div>
+          -->
 
-          <p><strong>OneView - Business Account Opening</strong> <small>(2018)</small><br>
-          AngularJS + Cordova app for opening business current accounts</p>
+          <div class="project">
+            <h3>OneView - Business Account Opening (2018)</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">Customer Research</li>
+              <li class="skills-list__item">User Journey</li>
+              <li class="skills-list__item">Wireframes</li>
+              <li class="skills-list__item">Visual Design</li>
+              <li class="skills-list__item">AngularJS Prototype</li>
+            </ul>
+            <p>AngularJS + Cordova app for opening business current accounts</p>
+          </div>
+          <!--
+            <div class="project-details">
+              [ACCOUNT CHOICE SCREENSHOT]
+              <p>I designed a streamlined business account opening process.</p>
+              <p>Before we launched this new feature, opening a business account was a cumbersome process. Customers would have to fill out a lengthy paper form and bring it into the branch. Staff would take an hour to record their answers using complex legacy software. And after all that, they could find their applications rejected for using a nickname or a slightly different version of their home address.</p>
+              <p>Our goals were very much driven by business needs:</p>
+              <ol>
+                <li class="skills-list__item">Reduce the amount of time spent on each application</li>
+                <li class="skills-list__item">Minimise rejections for minor discrepancies</li>
+              </ol>
+              <p>I began by analysing the customers who were opening accounts with the bank. We found that the majority of new limited companies had one director and one secretary. We also found out that these persons usually had personal accounts open with the bank.</p>
+              <p>I created key user journeys using OmniGraffle, and working prototypes using HTML, CSS and JavaScript.</p>
+              [USER JOURNEY]
+              [PROTOTYPE SCREENSHOT]
+              <p>By pulling information directly from the Companies Registration Office, we minimised the amount of time spent on data entry.</p>
+              [PROTOTYPE SCREENSHOT]
+              <p>We also matched the company's information to the bank's customer database.</p>
+              <p>Switching to a design-led process was hugely successful for the bank. The time spent on each application went down by more than half, and both staff satisfaction and the Net Promoter Score rose.</p>
+            </div>
+          -->
 
-          <p><strong>OneView Desktop</strong> <small>(2017)</small><br>
-          AngularJS app used by AIB branch staff across Ireland</p>
+          <div class="project">
+            <h3>OneView Desktop (2017)</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">Pattern Library</li>
+              <li class="skills-list__item">Visual Design</li>
+              <li class="skills-list__item">AngularJS Prototype</li>
+              <li class="skills-list__item">Usability Testing</li>
+            </ul>
+            <p>AngularJS app used by AIB branch staff across Ireland</p>
+          </div>
+          <!--
+            <div class="project-details">
+              <p>I redesigned a successful iPad app for desktop users.</p>
+              <p>Shortly before I began working with my client, they introduced an iPad app to help their customer-facing staff make appointments, open accounts and update customer information.</p>
+              <p>The app was well so well-received that they decided to roll it out on desktops as well.</p>
+              <p>Our challenges, as always, were time and money. The goal of the project was to duplicate as much of the functionality of the iPad app, as quickly as possible.</p>
+              <p>While the business analysts began writing the user stories, I created a pattern library in Sketch specifically for desktop users.</p>
+              [SKETCH PICS]
+              <p>To fit in with Windows conventions, I added more information to the header.</p>
+              [SKETCH PICS]
+              <p>Since the web app would be working with a lot more screen, I made the sidebar always visible.</p>
+              [SKETCH PICS]
+              <p>There would be no touch screen or camera, but we would now have access to WiFi, a printer and a scanner.</p>
+              <p>With the desktop app, we were able to reach almost every employee in the company. After launch I had time to do usability testing. My hope is that in the future, we will have time to research and make conscious decisions about how users are using the app on desktop vs. iPads.</p>
+            </div>
+          -->
 
-          <p><strong>Good Morning Sunshine</strong> <small>(2016)</small><br>
-          Wordpress promotional site for a Vitamin D reminder app</p>
+          <div class="project">
+            <h3>Good Morning Sunshine (2016)</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">Visual Design</li>
+              <li class="skills-list__item">Wordpress Development</li>
+              <li class="skills-list__item">HTML, CSS, JavaScript &amp; PHP</li>
+            </ul>
+            <p>Wordpress promotional site for a Vitamin D reminder app</p>
+          </div>
 
-          <p><a href="/dublinbikes" target="_blank"><strong>Bike Station Map and Directions</strong></a> <small>(2016)</small><br>
-          AngularJS web application that uses the Google Maps and dublinbikes APIs to display realtime information and cycling directions between stations. (Chrome / Safari)</p>
+          <div class="project">
+            <h3><a href="/dublinbikes" target="_blank">Bike Station Map and Directions</a> (2016)</h3>
+            <ul class="skills-list">
+              <li class="skills-list__item">AngularJS Development</li>
+            </ul>
+            <p>AngularJS web application that uses the Google Maps and dublinbikes APIs to display realtime information and cycling directions between stations. (Chrome / Safari only)</p>
+          </div>
 
         </div>
       </section>
       <section>
-        <h3>Archive</h3>
-        <div class="section-content">
+        <h2 class="section__header">Older Projects</h2>
+        <div class="section__content">
 
-          <p><strong>Ohio Civil Service Employees Association</strong> <small>(2016)</small><br>
-          User-friendly, responsive site for union members</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="ocsea" href="images/ocsea.png"><img class="image" src="images/ocsea.png"></a>
-            <a class="image-link" data-lightbox="ocsea" href="images/ocsea-press-center.png"><img class="image" src="images/ocsea-press-center.png"></a>
+          <div class="media">
+            <img class="media__image" src="images/ocsea.png">
+            <!--
+              <img class="media__image" src="images/ocsea-press-center.png">
+            -->
+            <div class="media__content">
+              <h4>Ohio Civil Service Employees Association (2016)</h4>
+              User-friendly, responsive site for union members
+            </div>
           </div>
 
-          <p><strong>OCSEA Education</strong> <small>(2015)</small><br>
-          Single page site advertising a scholarship program</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="ocseaeducation" href="images/ocseaed.png"><img class="image" src="images/ocseaed.png"></a>
-            <a class="image-link" data-lightbox="ocseaeducation" href="images/ocseaed-form.gif"><img class="image" src="images/ocseaed-form.gif"></a>
+          <div class="media">
+            <img class="media__image" src="images/ocseaed.png">
+            <!--
+              <img class="media__image" src="images/ocseaed-form.gif">
+            -->
+            <div class="media__content">
+              <h4>OCSEA Education (2015)</h4>
+              Single page site advertising a scholarship program
+            </div>
           </div>
 
-          <p><strong>OCSEA Votes</strong> <small>(2014)</small><br>
-          Political news site for union activists</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="ocseavotes" href="images/ocseavotes.png"><img class="image" src="images/ocseavotes.png"></a>
-            <a class="image-link" data-lightbox="ocseavotes" href="images/ocseavotes-endorsements.png"><img class="image" src="images/ocseavotes-endorsements.png"></a>
-            <a class="image-link" data-lightbox="ocseavotes" href="images/ocseavotes-mobile.png"><img class="image" src="images/ocseavotes-mobile.png"></a>
+          <div class="media">
+            <img class="media__image" src="images/ocseavotes.png">
+            <!--
+              <img class="media__image" src="images/ocseavotes-endorsements.png">
+              <img class="media__image" src="images/ocseavotes-mobile.png">
+            -->
+            <div class="media__content">
+              <h4>OCSEA Votes (2014)</h4>
+              Political news site for union activists
+            </div>
           </div>
-
-          <p><strong>OCSEA Convention</strong> <small>(2013)</small><br>
-          Mobile-first website for convention delegates</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="ocseaconvention" href="images/ocseaconvention.png"><img class="image" src="images/ocseaconvention.png"></a>
-            <a class="image-link" data-lightbox="ocseaconvention" href="images/ocseaconvention-news.png"><img class="image" src="images/ocseaconvention-news.png"></a>
-            <a class="image-link" data-lightbox="ocseaconvention" href="images/ocseaconvention-speakers.png"><img class="image" src="images/ocseaconvention-speakers.png"></a>
-            <a class="image-link" data-lightbox="ocseaconvention" href="images/ocseaconvention-mobile-hotel.png"><img class="image" src="images/ocseaconvention-mobile-hotel.png"></a>
-            <a class="image-link" data-lightbox="ocseaconvention" href="images/ocseaconvention-mobile-photos.png"><img class="image" src="images/ocseaconvention-mobile-photos.png"></a>
+          <div class="media">
+            <img class="media__image" src="images/ocseaconvention.png">
+            <!--
+              <img class="media__image" src="images/ocseaconvention-news.png">
+              <img class="media__image" src="images/ocseaconvention-speakers.png">
+              <img class="media__image" src="images/ocseaconvention-mobile-hotel.png">
+              <img class="media__image" src="images/ocseaconvention-mobile-photos.png">
+            -->
+            <div class="media__content">
+              <h4>OCSEA Convention (2013)</h4>
+              Mobile-first website for convention delegates
+            </div>
           </div>
-
-          <p><strong>Gentle Youth and Family Services</strong> <small>(2012)</small><br>
-          Wordpress promotional site for social work consultant</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="gyfs" href="images/gyfs.png"><img class="image" src="images/gyfs.png"></a>
-            <a class="image-link" data-lightbox="gyfs" href="images/gyfs-meet-amy.png"><img class="image" src="images/gyfs-meet-amy.png"></a>
-            <a class="image-link" data-lightbox="gyfs" href="images/gyfs-referrals.png"><img class="image" src="images/gyfs-referrals.png"></a>
+          <div class="media">
+            <img class="media__image" src="images/gyfs.png">
+            <!--
+              <img class="media__image" src="images/gyfs-meet-amy.png">
+              <img class="media__image" src="images/gyfs-referrals.png">
+            -->
+            <div class="media__content">
+              <h4>Gentle Youth and Family Services (2012)</h4>
+              Wordpress promotional site for social work consultant
+            </div>
           </div>
-
-          <p><strong>National Council of Jewish Women, Columbus Section</strong> <small>(2011)</small><br>
-          Wordpress informational and fundraising site for volunteer organisation</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="ncjw" href="images/ncjw.png"><img class="image" src="images/ncjw.png"></a>
-            <a class="image-link" data-lightbox="ncjw" href="images/ncjw-article.png"><img class="image" src="images/ncjw-article.png"></a>
-            <a class="image-link" data-lightbox="ncjw" href="images/ncjw-lightbox.png"><img class="image" src="images/ncjw-lightbox.png"></a>
+          <div class="media">
+            <img class="media__image" src="images/ncjw.png">
+            <!--
+              <img class="media__image" src="images/ncjw-article.png">
+              <img class="media__image" src="images/ncjw-lightbox.png">
+            -->
+            <div class="media__content">
+              <h4>National Council of Jewish Women, Columbus (2011)</h4>
+              Wordpress informational and fundraising site for volunteer organisation
+            </div>
           </div>
-
-          <p><strong>Ohio Hispanic Business Summit</strong> <small>(2011)</small><br>
-          DotNetNuke promotional site for small business conference</p>
-          <div class="images">
-            <a class="image-link" data-lightbox="ohbs" href="images/ohbs.png"><img class="image" src="images/ohbs.png"></a>
-            <a class="image-link" data-lightbox="ohbs" href="images/ohbs-article.png"><img class="image" src="images/ohbs-article.png"></a>
-            <a class="image-link" data-lightbox="ohbs" href="images/ohbs-map.png"><img class="image" src="images/ohbs-map.png"></a>
+          <div class="media">
+            <img class="media__image" src="images/ohbs.png">
+            <!--
+              <img class="media__image" src="images/ohbs-article.png">
+              <img class="media__image" src="images/ohbs-map.png">
+            -->
+            <div class="media__content">
+              <h4>Ohio Hispanic Business Summit (2011)</h4>
+              DotNetNuke promotional site for small business conference
+            </div>
           </div>
 
         </div>

@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   @include print-styles($textsize, large);
-  border-bottom: 2px solid $dark-blue;
+  border-bottom: 4px solid $dark-blue;
   letter-spacing: .1em;
   margin-top: $base-font-size * 3;
 }
@@ -41,6 +41,7 @@ a {
   border-width: 0 0 1px;
   color: $base-orange;
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
   &:hover {
     background-color: $base-orange;
@@ -105,6 +106,15 @@ ol {
   padding: 0 $base-font-size * .5;
 }
 
+.item_color_white {
+  background-color: $white;
+  color: $base-blue;
+}
+
 .highlight {
   color: $base-orange;
+}
+
+.white {
+  color: $white;
 }

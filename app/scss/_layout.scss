@@ -1,4 +1,12 @@
 .container {
-  margin: $base-line-height * 2 $base-line-height;
+  margin: 0 auto;
   max-width: 45 * $base-font-size;
+  padding: 8 * $base-font-size 4 * $base-font-size 2 * $base-font-size;
+
+  @media (max-width: 45 * $base-font-size) {
+    padding: 2 * $base-font-size;
+  }
+
 }
+
+

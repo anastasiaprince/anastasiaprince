@@ -1,0 +1,186 @@
+.project {
+  background-color: $peach;
+  border: 2px solid $base-blue;
+  color: $base-blue;
+  margin-bottom: $base-line-height * 2;
+  padding: $base-line-height;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  &:hover {
+    background-color: $peach-glow;
+    border: 2px solid $base-orange;
+    box-shadow: 0 1px 3px $base-orange, 0 1px 2px $base-orange;
+    color: $base-blue;
+  }
+
+  &::after {
+  }
+}
+
+.project_type_old {
+  &:hover {
+    background-color: $peach;
+    border: 2px solid $base-blue;
+    box-shadow: none;
+    color: $base-blue;
+  }
+}
+
+.project__image {
+  border: 1px solid $dark-blue;
+  max-width: 100%;
+  margin-bottom: $base-font-size / 2;
+}
+
+.projects__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects {
+  position: relative;
+}
+
+.projects.content-block-is-visible::before {
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  opacity: 1;
+  transition: opacity .3s 0s, visibility 0s 0s;
+  visibility: visible;
+}
+
+.projects__list::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+
+.descriptions {
+  /* move the block outside the viewport (to the right) - mobile only */
+  -moz-transform: translateX(100%);
+  -moz-transition: -moz-transform .3s;
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -webkit-transition: -webkit-transform .3s;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform .3s;
+  width: 100vw;
+  z-index: 1;
+}
+
+.descriptions.is-visible {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.descriptions__list {
+  height: 100%;
+}
+
+.descriptions > ul > li {
+  background-color: $base-blue;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: $white;
+  height: 100%;
+  opacity: 0;
+  overflow-y: scroll;
+  padding: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+.descriptions > ul > li.is-selected {
+  -webkit-overflow-scrolling: touch;
+  opacity: 1;
+  position: relative;
+  visibility: visible;
+}
+
+.description__container {
+  margin: 0 auto;
+  max-width: 45 * $base-font-size;
+  padding: 4 * $base-font-size;
+
+  @media (max-width: 45 * $base-font-size) {
+    padding: 2 * $base-font-size;
+  }
+}
+
+.close {
+  -moz-transform: scale(0);
+  -moz-transition: -moz-transform .2s;
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transition: -webkit-transform .2s;
+  border: none;
+  color: transparent;
+  height: 2 * $base-font-size;
+  overflow: hidden;
+  position: fixed;
+  right: 2 * $base-font-size;
+  text-indent: 100%;
+  top: $base-font-size;
+  transform: scale(0);
+  transition: transform .2s;
+  white-space: nowrap;
+  width: 2 * $base-font-size;
+
+  &::after,
+  &::before {
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    background-color: $base-blue;
+    content: '';
+    height: 2 * $base-font-size;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateZ(0);
+    width: 2px;
+  }
+}
+
+.descriptions .close::after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.descriptions .close::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.descriptions .close.is-scaled-up {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.no-touch .descriptions .close.is-scaled-up:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}

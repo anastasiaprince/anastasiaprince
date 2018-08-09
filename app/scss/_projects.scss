@@ -2,8 +2,8 @@
   background-color: $peach;
   border: 2px solid $base-blue;
   color: $base-blue;
-  margin-bottom: $base-line-height * 2;
-  padding: $base-line-height;
+  margin-bottom: $base-font-size * 2;
+  padding: $base-font-size;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
   &:hover {
@@ -17,10 +17,19 @@
   }
 }
 
+.projects_type_old {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $base-font-size;
+}
 .project_type_old {
+
+  border: 0;
+  max-width: 20em;
+
   &:hover {
     background-color: $peach;
-    border: 2px solid $base-blue;
+    border: 0;
     box-shadow: none;
     color: $base-blue;
   }
@@ -106,10 +115,10 @@
 
 .description__container {
   margin: 0 auto;
-  max-width: 45 * $base-font-size;
+  max-width: 40 * $base-font-size;
   padding: 4 * $base-font-size;
 
-  @media (max-width: 45 * $base-font-size) {
+  @media (max-width: 40 * $base-font-size) {
     padding: 2 * $base-font-size;
   }
 }
@@ -121,7 +130,7 @@
   -o-transform: scale(0);
   -webkit-transform: scale(0);
   -webkit-transition: -webkit-transform .2s;
-  border: none;
+  border: 0;
   color: transparent;
   height: 2 * $base-font-size;
   overflow: hidden;

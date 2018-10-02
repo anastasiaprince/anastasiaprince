@@ -26,13 +26,12 @@ h2 {
 }
 
 h3 {
-  @include print-styles($textsize, x-large);
+  @include print-styles($textsize, large);
   padding-top: $base-font-size;
-  text-transform: uppercase;
 }
 
 h4 {
-  @include print-styles($textsize, large);
+  @include print-styles($textsize, base);
 }
 
 a {

@@ -1,5 +1,5 @@
 .container {
-  margin: 0;
+  margin: 0 auto;
   max-width: 40 * $base-font-size;
   padding: 8 * $base-font-size 4 * $base-font-size 2 * $base-font-size;
 
@@ -9,4 +9,6 @@
 
 }
 
-
+.align-center {
+  text-align: center;
+}

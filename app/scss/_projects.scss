@@ -1,3 +1,13 @@
+figure {
+  margin-bottom: $base-font-size * 2;
+}
+
+figcaption {
+  @include print-styles($textsize, small);
+  font-weight: 400;
+  text-align: center;
+}
+
 .project {
   background-color: $peach;
   color: $base-blue;
@@ -35,9 +45,8 @@
 
 .project__image {
   background-color: $white;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 40px 40px rgba(0, 0, 0, .16);
-  height: 25em;
   margin-bottom: $base-font-size / 2;
   max-width: 100%;
   transition: all .2s ease-in-out;
@@ -48,8 +57,13 @@
   }
 
   @media (max-width: 40 * $base-font-size) {
-    height: 15em;
   }
+}
+
+.project__image_type_old {
+  height: 10rem;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 .projects__list {

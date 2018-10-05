@@ -2,9 +2,14 @@ figure {
   margin-bottom: $base-font-size * 2;
 }
 
+figure img {
+  border-radius: 4px;
+  box-shadow: 0 20px 20px rgba(0,0,0,.16);
+}
+
 figcaption {
   @include print-styles($textsize, small);
-  font-weight: 400;
+  padding: $base-font-size $base-font-size * 2;
   text-align: center;
 }
 
